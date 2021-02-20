@@ -56,16 +56,16 @@
 (defmacro sketch-themes--variant-with-colors (variant &rest body)
   "Execute BODY in a scope where the different colors for given VARIANT is bound."
   `(let* ((colors (or (cdr (assoc ,variant sketch-themes-colors))
-		      (error "No such theme variant")))
-	  (bg         (cdr (assoc 'bg colors)))
-	  (fg         (cdr (assoc 'fg colors)))
-	  (weak	      (cdr (assoc 'weak colors)))
-	  (weaker     (cdr (assoc 'weaker colors)))
-	  (weakest    (cdr (assoc 'weakest colors)))
-	  (highlight  (cdr (assoc 'highlight colors)))
-	  (warning    (cdr (assoc 'warning colors)))
-	  (success    (cdr (assoc 'success colors)))
-	  (string     (cdr (assoc 'string colors))))
+                      (error "No such theme variant")))
+          (bg         (cdr (assoc 'bg colors)))
+          (fg         (cdr (assoc 'fg colors)))
+          (weak	      (cdr (assoc 'weak colors)))
+          (weaker     (cdr (assoc 'weaker colors)))
+          (weakest    (cdr (assoc 'weakest colors)))
+          (highlight  (cdr (assoc 'highlight colors)))
+          (warning    (cdr (assoc 'warning colors)))
+          (success    (cdr (assoc 'success colors)))
+          (string     (cdr (assoc 'string colors))))
      ,@body))
 
 (defmacro sketch-themes--faces-spec ()
@@ -97,10 +97,6 @@
       ;; mode line
       (mode-line (:foreground ,fg :background ,weakest))
       (mode-line-inactive (:foreground ,weaker :background ,weakest))
-      (doom-modeline-bar (:background ,weaker))
-      (doom-modeline-info (:inherit bold))
-      (doom-modeline-repl-success (:inherit doom-modeline-info))
-      (doom-modeline-lsp-success (:inherit doom-modeline-info))
 
       ;; font lock
       (font-lock-builtin-face (:foreground ,fg))
@@ -200,7 +196,7 @@
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
   (add-to-list 'custom-theme-load-path
-	       (file-name-as-directory (file-name-directory load-file-name))))
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide 'sketch-themes)
 
