@@ -1,0 +1,36 @@
+#+TITLE:Sketch Themes
+
+A collection of almost monochrome Emacs themes in a couple of variants.
+
+* Installation
+** Use package
+If you have use-package setup on your system loading sketch-themes is as
+simple as:
+
+#+begin_src emacs-lisp
+
+  (use-package sketch-themes
+    :config
+    ;; Load black version
+    ;;(load-theme 'sketch-black t)
+    ;; Load white version
+    (load-theme 'sketch-white t))
+
+#+end_src
+
+** Manual installation
+If you prefer, you can install sketch-themes manually by downloading the
+elisp files in this repo and place them somewhere in your
+=custom-theme-load-path=.
+
+You can set your =custom-theme-load-path= by adding this to your =.emacs.d= or
+=.emacs.d/init.el=:
+
+#+begin_src emacs-lisp
+
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+#+end_src
+
+You should now be able to load sketch-themes with ~M-x load-theme RET
+sketch-{black, white}~!
