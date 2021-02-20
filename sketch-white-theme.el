@@ -1,13 +1,12 @@
-;;; sketch-white-theme.el --- Theme Sketch
+;;; sketch-white-theme.el --- Sketch Theme (White Version) -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2020 Daw-Ran Liou
 
 ;; Author: Daw-Ran Liou <hi@dawranliou.com>
 ;; URL: https://github.com/dawranliou/emacs.d/themes
 ;; Version: 0.1
-;; Package-Requires: ((emacs "24"))
+;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces
-
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -26,8 +25,11 @@
 
 ;;; Commentary:
 
+;; The white version of the Sketch color themes.
+
 ;;; Code:
 (require 'sketch-themes)
 (sketch-themes--define-theme white)
 
+(provide 'sketch-white-theme)
 ;;; sketch-white-theme.el ends here

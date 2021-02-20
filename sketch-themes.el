@@ -5,9 +5,8 @@
 ;; Author: Daw-Ran Liou <hi@dawranliou.com>
 ;; URL: https://github.com/dawranliou/emacs.d/themes
 ;; Version: 0.1
-;; Package-Requires: ((emacs "24"))
+;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces
-
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -26,32 +25,32 @@
 
 ;;; Commentary:
 
-;; A suite of almost monochrome Emacs themes A lot of the code and concepts were
-;; inspired by [@cryon](https://github.com/cryon)'s [Almost Mono
-;; Themes](https://github.com/cryon/almost-mono-themes). I tweaked the color
-;; slightly to fit my tastes. Huge thanks to him!
+;; A suite of almost monochrome Emacs themes.  A lot of the code and concepts
+;; were inspired by [@cryon](https://github.com/cryon)'s [Almost Mono
+;; Themes](https://github.com/cryon/almost-mono-themes).  Mostly what I did is
+;; tweaking the color slightly to fit my tastes.  Huge thanks to him!
 
 ;;; Code:
 
 (defconst sketch-themes-colors
-  '((white . ((fg . "#212121")
-              (bg . "#FAFAFA")
-              (weak . "#888888")
-              (weaker . "#dddddd")
-              (weakest . "#efefef")
+  '((white . ((fg        . "#212121")
+              (bg        . "#FAFAFA")
+              (weak      . "#888888")
+              (weaker    . "#dddddd")
+              (weakest   . "#efefef")
               (highlight . "#fee761")
-              (success . "#63c74d")
-              (warning . "#e43b44")))
+              (success   . "#63c74d")
+              (warning   . "#e43b44")))
 
-    (black . ((fg . "#f0f6f0")          ; (120, 2, 96)
-              (bg . "#222323")          ; (120, 3, 14)
-              (weak . "#6E706E")        ; (120, 2, 44)
-              (weaker . "#555755")      ; (120, 2, 34)
-              (weakest . "#2F302F")     ; (120, 2, 19)
+    (black . ((fg        . "#f0f6f0")          ; (120, 2, 96)
+              (bg        . "#222323")          ; (120, 3, 14)
+              (weak      . "#6E706E")        ; (120, 2, 44)
+              (weaker    . "#555755")      ; (120, 2, 34)
+              (weakest   . "#2F302F")     ; (120, 2, 19)
               (highlight . "#7D5DC1")
               ;; (highlight . "#CC7F22")   ; An alternative highlighting color
-              (success . "#63c74d")
-              (warning . "#e43b44")))))
+              (success   . "#63c74d")
+              (warning   . "#e43b44")))))
 
 (defmacro sketch-themes--variant-with-colors (variant &rest body)
   "Execute BODY in a scope where the different colors for given VARIANT is bound."
@@ -171,9 +170,7 @@
 
       ;; flyspell mode
       (flyspell-duplicate (:underline (:color ,weak :style wave)))
-      (flyspell-incorrect (:underline (:color ,warning :style wave)))
-
-      ))))
+      (flyspell-incorrect (:underline (:color ,warning :style wave)))))))
 
 
 (defun sketch-themes--variant-name (variant)
@@ -183,7 +180,7 @@
 (defmacro sketch-themes--define-theme (variant)
   "Define a theme for the sketch variant VARIANT."
   (let ((name (sketch-themes--variant-name variant))
-        (doc (format "sketch theme (%s version)" variant)))
+        (doc (format "Sketch Theme (%s version)" variant)))
     `(progn
        (deftheme ,name ,doc)
        (put ',name 'theme-immediate t)
