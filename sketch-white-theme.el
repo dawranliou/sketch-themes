@@ -1,4 +1,4 @@
-;;; sketch-white-theme.el --- Sketch Theme (White Version) -*- lexical-binding: t; -*-
+;;; sketch-white-theme.el --- Sketch Theme (White Version)
 
 ;; Copyright (C) 2020 Daw-Ran Liou
 

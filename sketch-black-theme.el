@@ -1,4 +1,4 @@
-;;; sketch-black-theme.el --- Sketch Theme (Black Version) -*- lexical-binding: t; -*-
+;;; sketch-black-theme.el --- Sketch Theme (Black Version)
 
 ;; Copyright (C) 2020 Daw-Ran Liou
 
