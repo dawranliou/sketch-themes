@@ -4,7 +4,7 @@
 
 ;; Author: Daw-Ran Liou <hi@dawranliou.com>
 ;; URL: https://github.com/dawranliou/emacs.d/themes
-;; Version: 0.1
+;; Version: 1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces
 
