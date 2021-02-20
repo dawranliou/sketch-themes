@@ -11,6 +11,8 @@ like the most are the [[https://github.com/cryon/almost-mono-themes][almost mono
 almost mono themes.
 
 * Screenshots
+See more in [[file:screenshots/README.org][screenshots]].
+
 ** Sketch White
 [[file:screenshots/white-prog.png]]
 ** Sketch Black
