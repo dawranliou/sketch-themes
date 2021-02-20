@@ -1,0 +1,21 @@
+#+TITLE:Screenshots
+
+* Sketch White
+** Org-mode
+[[file:white-org.png]]
+
+** Org-mode with variable-pitch-mode
+[[file:white-org-variable-pitch.png]]
+
+** Prog-mode
+[[file:white-prog.png]]
+
+* Sketch Black
+** Org-mode
+[[file:black-org.png]]
+
+** Org-mode with variable-pitch-mode
+[[file:black-org-variable-pitch.png]]
+
+** Prog-mode
+[[file:black-prog.png]]

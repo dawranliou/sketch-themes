@@ -12,10 +12,8 @@ almost mono themes.
 
 * Screenshots
 ** Sketch White
-[[file:screenshots/white-org-variable-pitch.png]]
 [[file:screenshots/white-prog.png]]
 ** Sketch Black
-[[file:screenshots/black-org-variable-pitch.png]]
 [[file:screenshots/black-prog.png]]
 * Installation
 ** Use package
