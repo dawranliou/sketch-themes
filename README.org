@@ -15,8 +15,10 @@ See more in [[file:screenshots/README.org][screenshots]].
 
 ** Sketch White
 [[file:screenshots/white-prog.png]]
+
 ** Sketch Black
 [[file:screenshots/black-prog.png]]
+
 * Installation
 ** Use package
 If you have use-package setup on your system loading sketch-themes is as
@@ -51,5 +53,8 @@ You should now be able to load sketch-themes with ~M-x load-theme RET
 sketch-{black, white}~!
 
 * Credits
-A lot of the code and concepts were inspired by Github user [[https://github.com/cryon][@cryon]]'s [[https://github.com/cryon/almost-mono-themes][Almost Mono
-Themes]]. Huge thanks to him!
+- A lot of the code and concepts were inspired by Github user [[https://github.com/cryon][@cryon]]'s [[https://github.com/cryon/almost-mono-themes][Almost
+  Mono Themes]]. Huge thanks to him!
+
+- Also thanks to [[https://twitter.com/Polyducks][Polyducks]]' [[https://lospec.com/palette-list/1bit-monitor-glow][1 Bit Monitor Glow Palette]] and to his suggestion on
+  the highlighting colors.
