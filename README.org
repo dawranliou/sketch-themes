@@ -1,6 +1,6 @@
 #+TITLE:Sketch Themes
 
-A collection of Emacs themes like sketching on paper in a couple of variants.
+A collection of (almost) grayscale Emacs themes
 
 * Introduction
 A lot of my current philosophy about syntax highlighting went into my blog post

@@ -25,8 +25,8 @@
 
 ;;; Commentary:
 
-;; A suite of almost monochrome Emacs themes.  A lot of the code and concepts
-;; were inspired by [@cryon](https://github.com/cryon)'s [Almost Mono
+;; A collection of (almost) grayscale Emacs themes.  A lot of the code and
+;; concepts were inspired by [@cryon](https://github.com/cryon)'s [Almost Mono
 ;; Themes](https://github.com/cryon/almost-mono-themes).  Mostly what I did is
 ;; tweaking the color slightly to fit my tastes.  Huge thanks to him!
 
@@ -42,18 +42,19 @@
               (success   . "#63c74d")
               (warning   . "#e43b44")))
 
-    (black . ((fg        . "#f0f6f0")          ; (120, 2, 96)
-              (bg        . "#222323")          ; (120, 3, 14)
-              (weak      . "#6E706E")        ; (120, 2, 44)
-              (weaker    . "#555755")      ; (120, 2, 34)
-              (weakest   . "#2F302F")     ; (120, 2, 19)
+    (black . ((fg        . "#f0f6f0")
+              (bg        . "#222323")
+              (weak      . "#6E706E")
+              (weaker    . "#555755")
+              (weakest   . "#2F302F")
               (highlight . "#7D5DC1")
               ;; (highlight . "#CC7F22")   ; An alternative highlighting color
               (success   . "#63c74d")
               (warning   . "#e43b44")))))
 
 (defmacro sketch-themes--variant-with-colors (variant &rest body)
-  "Execute BODY in a scope where the different colors for given VARIANT is bound."
+  "Execute BODY in a scope where the different colors for given
+VARIANT is bound."
   `(let* ((colors (or (cdr (assoc ,variant sketch-themes-colors))
                       (error "No such theme variant")))
           (bg         (cdr (assoc 'bg colors)))
@@ -109,7 +110,7 @@
       (font-lock-string-face (:foreground ,weak))
       (font-lock-type-face (:foreground ,fg))
       (font-lock-variable-name-face (:foreground ,fg :bold t))
-      (font-lock-warning-face (:foreground ,fg :underline (:color ,warning :style wave)))
+      (font-lock-warning-face (:underline (:color ,warning :style wave)))
       (fill-column-indicator (:foreground ,weakest))
 
       ;; clojure mode
@@ -143,7 +144,7 @@
       (org-special-keyword (:inherit (font-lock-comment-face fixed-pitch)))
       (org-meta-line (:inherit (font-lock-comment-face fixed-pitch)))
       (org-checkbox (:inherit fixed-pitch))
-      (org-hide (:inherit 'fixed-pitch :foreground ,bg))
+      (org-hide (:inherit fixed-pitch :foreground ,bg))
       (org-document-title (:height 1.5))
       (org-level-1 (:height 1.3))
       (org-level-2 (:height 1.2))
