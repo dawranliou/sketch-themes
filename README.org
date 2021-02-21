@@ -1,5 +1,7 @@
 #+TITLE:Sketch Themes
 
+[[https://melpa.org/#/sketch-themes][file:https://melpa.org/packages/sketch-themes-badge.svg]]
+
 A collection of (almost) grayscale Emacs themes
 
 * Introduction
