@@ -54,6 +54,11 @@ You can set your =custom-theme-load-path= by adding this to your =.emacs.d= or
 You should now be able to load sketch-themes with ~M-x load-theme RET
 sketch-{black, white}~!
 
+* You might also want to check out:
+1. [[https://github.com/cryon/almost-mono-themes][almost-mono-themes]]
+2. [[https://github.com/maio/eink-emacs][eink]]
+3. [[https://github.com/voloyev/sexy-monochrome-theme][sexy-monochrome]]
+
 * Credits
 - A lot of the code and concepts were inspired by Github user [[https://github.com/cryon][@cryon]]'s [[https://github.com/cryon/almost-mono-themes][Almost
   Mono Themes]]. Huge thanks to him!
