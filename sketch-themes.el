@@ -3,7 +3,7 @@
 ;; Copyright (C) 2020 Daw-Ran Liou
 
 ;; Author: Daw-Ran Liou <hi@dawranliou.com>
-;; URL: https://github.com/dawranliou/emacs.d/themes
+;; URL: https://github.com/dawranliou/sketch-themes/
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces
