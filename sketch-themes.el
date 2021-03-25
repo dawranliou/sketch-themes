@@ -93,6 +93,7 @@ VARIANT is bound."
       (default-italic (:italic t))
       (line-number (:background ,bg :foreground ,weaker))
       (line-number-current-line (:background ,bg :foreground ,fg))
+      (fixed-pitch (:background ,weakest))
 
       ;; mode line
       (mode-line (:foreground ,fg :background ,weakest))
