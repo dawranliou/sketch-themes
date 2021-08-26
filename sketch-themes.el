@@ -76,7 +76,7 @@ VARIANT is bound."
     `(
       ;; default
       (default (:background ,bg :foreground ,fg))
-      (fringe (:background ,bg))
+      (fringe (:background ,bg :foreground ,weak))
       (shadow (:background ,weakest))
       (highlight (:foreground ,fg :background ,highlight))
       (region (:foreground ,fg :background ,highlight))
