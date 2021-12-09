@@ -137,23 +137,6 @@ VARIANT is bound."
       (git-gutter:added (:background ,success :foreground ,success))
       (git-gutter:deleted (:background ,warning :foreground ,warning))
 
-      ;; org mode
-      (org-block (:extend t :background ,weakest :inherit (shadow fixed-pitch)))
-      (org-code (:inherit (shadow fixed-pitch)))
-      (org-table (:inherit (shadow fixed-pitch)))
-      (org-verbatim (:inherit (shadow fixed-pitch)))
-      (org-special-keyword (:inherit (font-lock-comment-face fixed-pitch)))
-      (org-meta-line (:inherit (font-lock-comment-face fixed-pitch)))
-      (org-checkbox (:inherit fixed-pitch))
-      (org-hide (:inherit fixed-pitch :foreground ,bg))
-      (org-document-title (:bold t :foreground ,fg))
-      (org-done (:foreground ,weak :bold t))
-      (org-headline-done (:foreground ,fg))
-      (org-todo (:foreground ,success :bold t))
-      (org-drawer (:foreground ,weak))
-      (org-date (:underline t))
-      (org-ellipsis (:foreground ,weak))
-
       ;; flymake mode
       (flymake-warning (:underline (:style wave :color ,weak)))
       (flymake-error (:underline (:style wave :color ,warning)))
