@@ -93,7 +93,6 @@ VARIANT is bound."
       (default-italic (:italic t))
       (line-number (:background ,bg :foreground ,weaker))
       (line-number-current-line (:background ,bg :foreground ,fg))
-      (fixed-pitch (:background ,weakest))
 
       ;; mode line
       (mode-line (:foreground ,fg :background ,weakest))
@@ -121,33 +120,7 @@ VARIANT is bound."
       (hl-line (:background ,weakest))
 
       ;; hl fill column
-      (hl-fill-column-face (:background ,weaker))
-
-      ;; company
-      (company-tooltip (:foreground ,fg :background ,weakest))
-      (company-tooltip-selection (:background ,weaker :foreground ,fg))
-      (company-tooltop-annotation (:foreground ,fg))
-      (company-tooltip-common (:foreground ,fg :bold t))
-      (company-tooltip-common-selection (:foreground ,fg :bold t))
-      (company-scrollbar-bg (:background ,weaker))
-      (company-scrollbar-fg (:background ,weak))
-
-      ;; git gutter
-      (git-gutter:modified (:background ,highlight :foreground ,highlight))
-      (git-gutter:added (:background ,success :foreground ,success))
-      (git-gutter:deleted (:background ,warning :foreground ,warning))
-
-      ;; flymake mode
-      (flymake-warning (:underline (:style wave :color ,weak)))
-      (flymake-error (:underline (:style wave :color ,warning)))
-
-      ;; flycheck mode
-      (flycheck-warning (:underline (:style wave :color ,weak)))
-      (flycheck-error (:underline (:style wave :color ,warning)))
-
-      ;; flyspell mode
-      (flyspell-duplicate (:underline (:color ,weak :style wave)))
-      (flyspell-incorrect (:underline (:color ,warning :style wave)))))))
+      (hl-fill-column-face (:background ,weaker))))))
 
 
 (defun sketch-themes--variant-name (variant)
