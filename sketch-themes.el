@@ -35,6 +35,7 @@
 (defconst sketch-themes-colors
   '((white . ((fg        . "#212121")
               (bg        . "#FAFAFA")
+              (bg-alt    . "#efefef")
               (weak      . "#888888")
               (weaker    . "#dddddd")
               (weakest   . "#efefef")
@@ -44,6 +45,7 @@
 
     (black . ((fg        . "#f0f6f0")
               (bg        . "#222323")
+              (bg-alt    . "#2F302F")
               (weak      . "#6E706E")
               (weaker    . "#555755")
               (weakest   . "#2F302F")
@@ -62,6 +64,7 @@ VARIANT is bound."
           (weak	      (cdr (assoc 'weak colors)))
           (weaker     (cdr (assoc 'weaker colors)))
           (weakest    (cdr (assoc 'weakest colors)))
+          (bg-alt     (cdr (assoc 'bg-alt colors)))
           (highlight  (cdr (assoc 'highlight colors)))
           (warning    (cdr (assoc 'warning colors)))
           (success    (cdr (assoc 'success colors)))
