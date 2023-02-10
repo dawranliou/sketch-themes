@@ -38,7 +38,6 @@
               (bg-alt    . "#efefef")
               (weak      . "#888888")
               (weaker    . "#dddddd")
-              (weakest   . "#efefef")
               (highlight . "#fee761")
               (success   . "#63c74d")
               (warning   . "#e43b44")))
@@ -48,7 +47,6 @@
               (bg-alt    . "#2F302F")
               (weak      . "#6E706E")
               (weaker    . "#555755")
-              (weakest   . "#2F302F")
               (highlight . "#7D5DC1")
               ;; (highlight . "#CC7F22")   ; An alternative highlighting color
               (success   . "#63c74d")
@@ -63,7 +61,6 @@ VARIANT is bound."
           (fg         (cdr (assoc 'fg colors)))
           (weak	      (cdr (assoc 'weak colors)))
           (weaker     (cdr (assoc 'weaker colors)))
-          (weakest    (cdr (assoc 'weakest colors)))
           (bg-alt     (cdr (assoc 'bg-alt colors)))
           (highlight  (cdr (assoc 'highlight colors)))
           (warning    (cdr (assoc 'warning colors)))
