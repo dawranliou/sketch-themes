@@ -80,7 +80,7 @@ VARIANT is bound."
       ;; default
       (default (:background ,bg :foreground ,fg))
       (fringe (:background ,bg :foreground ,weak))
-      (shadow (:background ,weakest))
+      (shadow (:inherit fixed-pitch))
       (highlight (:foreground ,fg :background ,highlight))
       (region (:foreground ,fg :background ,highlight))
       (show-paren-match (:background ,highlight :bold t))
