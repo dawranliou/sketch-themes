@@ -98,8 +98,8 @@ VARIANT is bound."
       (line-number-current-line (:background ,bg :foreground ,fg))
 
       ;; mode line
-      (mode-line (:foreground ,fg :background ,weakest))
-      (mode-line-inactive (:foreground ,weaker :background ,weakest))
+      (mode-line (:foreground ,fg :box t))
+      (mode-line-inactive (:foreground ,weak :weight light :box t))
 
       ;; font lock
       (font-lock-builtin-face (:foreground ,fg))
