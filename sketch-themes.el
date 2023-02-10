@@ -86,15 +86,15 @@ VARIANT is bound."
       (show-paren-match (:background ,highlight :bold t))
       (show-paren-mismatch (:background ,warning :bold t))
       (minibuffer-prompt (:bold t :foreground ,fg))
-      (isearch (:bold t :foreground ,fg :background ,weak :bold t))
+      (isearch (:bold t :foreground ,fg :background ,highlight :bold t))
       (lazy-highlight (:foreground ,fg :background ,weaker))
       (link (:underline t))
       (parenthesis (:foreground ,weak))
       (trailing-whitespace (:foreground nil :background ,warning))
       (cursor (:background ,fg :foreground ,bg))
-      (vertical-border (:foreground ,weaker))
+      (vertical-border (:foreground ,fg))
       (default-italic (:italic t))
-      (line-number (:background ,bg :foreground ,weaker))
+      (line-number (:background ,bg :foreground ,weak))
       (line-number-current-line (:background ,bg :foreground ,fg))
 
       ;; mode line
@@ -114,16 +114,16 @@ VARIANT is bound."
       (font-lock-type-face (:foreground ,fg))
       (font-lock-variable-name-face (:foreground ,fg :bold t))
       (font-lock-warning-face (:underline (:color ,warning :style wave)))
-      (fill-column-indicator (:foreground ,weakest))
+      (fill-column-indicator (:foreground ,weak))
 
       ;; clojure mode
       (clojure-keyword-face (:foreground ,fg))
 
       ;; hl line
-      (hl-line (:background ,weakest))
+      (hl-line (:background ,weaker))
 
       ;; hl fill column
-      (hl-fill-column-face (:background ,weaker))))))
+      (hl-fill-column-face (:background ,bg-alt))))))
 
 
 (defun sketch-themes--variant-name (variant)
